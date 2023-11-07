@@ -1,0 +1,46 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#cards {
+    background-image: url('../assets/background/background.jpg');
+    background-size: cover;
+    height: 100%;
+    /* Otras propiedades de estilo para el body */
+  }
+
+  .heroCard{
+    background-color:rgba(140, 140, 140, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+
+
+  .alignMas{
+    text-align: end;
+  }
+
+  /*SearchPage*/
+  .backSearch{
+    background-image: url('../assets/background/search.jpg');
+    background-size: cover;
+    height: 100vh;
+    
+    
+   
+  
+  }
+  
+  .backLogin{
+    background-image: url('../assets/background/login.jpg');
+    background-size: cover;
+    height: 100vh;
+  }
+
+  h1{
+    color: antiquewhite;
+  }
+
+
