@@ -51,7 +51,7 @@ export const Search = () => {
     <div className="row justify-content-between backSearch">
 
     <div className="col-4">
-      <h2>Search your Hero</h2>
+      <h2>Your Hero</h2>
       <form onSubmit={onCreate}>
       <input
        type="text" 
@@ -68,17 +68,17 @@ export const Search = () => {
 
     </div>
 
-    <div className="col-8 d-flex justify-content-end align-items-start  mt-4  ">
+    <div className="col-8 d-flex align-items-start p-2 mt-4  ">
 
        
-     <div className="alert alert-primary col-md-3  " style={{ display: showSearch ? '' : 'none '}}>
+     <div className="alert alert-primary col-md-3 " style={{ display: showSearch ? '' : 'none '}}>
       Search a Hero
      </div>
 
      
 
 
-     <div className="alert alert-danger col-md-3  " style={{display: showError ? '' : 'none'}}>
+     <div className="alert alert-danger col-md-3   " style={{display: showError ? '' : 'none'}}>
       No hero found <b>{q}</b>
      </div>
 
