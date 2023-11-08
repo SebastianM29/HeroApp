@@ -6,7 +6,7 @@ body, html {
 
 
 #cards {
-    background-image: url('../assets/background/background.jpg');
+    background-image: url('../src/assets/background/background.jpg');
     background-size: cover;
     height: 100%;
     /* Otras propiedades de estilo para el body */
@@ -24,7 +24,7 @@ body, html {
 
   /*SearchPage*/
   .backSearch{
-    background-image: url('../assets/background/search.jpg');
+    background-image: url('../src/assets/background/search.jpg');
     background-size: cover;
     height: 100vh;
     
@@ -34,7 +34,7 @@ body, html {
   }
   
   .backLogin{
-    background-image: url('../assets/background/login.jpg');
+    background-image: url('../src/assets/background/login.jpg');
     background-size: cover;
     height: 100vh;
   }
