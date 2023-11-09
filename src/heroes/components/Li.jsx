@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 
 
 export const Li = ({id,superhero,publisher,alter_ego,first_appearance,characters,typeC}) => {
-  const imageUrl = `../src/assets/heroes/${id}.jpg`
+  const imageUrl = `../src/resources/heroes/${id}.jpg`
   return (
     <motion.div 
     className={typeC}
