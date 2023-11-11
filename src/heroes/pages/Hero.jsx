@@ -42,7 +42,7 @@ export const Hero = () => {
 
        <div className='col-sm-12 col-md-8 col-lg-3 '>
          <div className="card">
-             <img src= {`../assets/heroes/${getHeroe.id}.jpg`} className='card-img img-thumbnail' alt={getHeroe.superhero} />
+             <img src= {`/resources/heroes/${getHeroe.id}.jpg`} className='card-img img-thumbnail' alt={getHeroe.superhero} />
              <div className="card-body">
              <h2 className="card-title">{getHeroe.superhero}</h2>
              <ul>
