@@ -33,14 +33,32 @@ body, html {
   
   }
   
+  h1{
+    color: rgba(230, 136, 12, 0.506);
+  }
   .backLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url('/resources/background/login.jpg');
     background-size: cover;
     height: 100vh;
   }
 
-  h1{
-    color: antiquewhite;
+  .container{
+    display: flex;
+    width: 350px;
+    height: 300px;
+    flex-direction: column;
+    background-color: rgba(30, 31, 31, 0.543);
+    border-radius: 15px;
+   
   }
+  .buttonLogin{
+   margin: 120px 0 0 0;
+   color: black;
 
-
+  }
+  
+  
+  
