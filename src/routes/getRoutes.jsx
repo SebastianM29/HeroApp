@@ -7,12 +7,14 @@ import { ErrorPages } from './pages/ErrorPages'
 
 import { DcPages, Hero, MarvelPages, Search } from '../heroes'
 import { LoginPages } from '../auth'
+import { PrivateRoute } from './PrivateRoute'
+import { PublicRoutes } from './publicRoutes'
 
 
 export const GetRoutes = () => createBrowserRouter([
   {
     path:"/",
-    element: <HeroesApp/>,
+    element: <PrivateRoute><HeroesApp/></PrivateRoute>,
     errorElement:<ErrorPages/>,
 
     children:[
@@ -42,7 +44,7 @@ export const GetRoutes = () => createBrowserRouter([
     
     {
         path:"login",
-        element:<LoginPages/>
+        element:<PublicRoutes> <LoginPages/> </PublicRoutes>
      },
 
 

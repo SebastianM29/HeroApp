@@ -22,11 +22,16 @@ const onLogin = () => {
     
   login(user)
 
+  
+  const path = localStorage.getItem('lastPath') || '/'
    console.log("deberia ver cuando hago click en el boton",user)
-    navigate('/',{
+    navigate(path,{
       replace:true
     })
   }
+
+
+
   return (
     <div className='backLogin'>
 

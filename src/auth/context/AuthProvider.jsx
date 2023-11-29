@@ -7,27 +7,51 @@ const initialState = {
     logged:false,
 }
 
+const init = () => {
+const user = JSON.parse(localStorage.getItem('user')) 
+
+return {
+  //La doble negación de Javascript se utiliza para convertir algunos valores como “null”, “undefined”, u objetos a un valor booleano.
+  logged : !!user,
+  user: user
+}
+
+}
+
+
 export const AuthProvider = ({children}) => {
 
-    const [state,dispatch]= useReducer(authReducer,initialState)
+    const [state,dispatch]= useReducer(authReducer,initialState,init)
+
 
     const login = (name = "") => {
+    
+      const user = {id : 'abc', name } 
       
         const action = {
         type: types.login,
-        payload:{
-          id : 'abc',
-          name: name
-        } 
+        payload:user
        }
+
+      localStorage.setItem('user',JSON.stringify(user))
 
 
        dispatch(action)
     }
-  
+     
+    const logout = () => {
+      localStorage.removeItem('user')
+
+
+      const action = {
+        type: types.logout,
+        
+      }
+      dispatch(action);
+    }
 
   return (
-    <AuthContext.Provider value={{...state,login }}>
+    <AuthContext.Provider value={{...state,login,logout }}>
         {children}
     </AuthContext.Provider>
   )
